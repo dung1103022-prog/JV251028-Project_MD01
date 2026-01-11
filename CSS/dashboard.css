@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: white;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #F6F8F9;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.ecommerce-text {
+    color: #252C32;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.nav-menu li {
+    font-size: 13px;
+    width: 100%;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #3F3F46;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a i {
+    margin-right: 15px;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    background-color: #D7EDFF;
+}
+
+.menu-item.active {
+    background-color: #00bcd4;
+}
+
+.category-section {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #E5E9EB;
+}
+.title img {
+    margin-left: 12px;
+    width: 36px;
+    height: 36px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+.log-out-btn {
+    width: 240px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #344054;
+    background-color: white;
+    border: 1px solid #F2F4F7;
+    border-radius: 8px;
+}
+
+.log-out-btn:hover {
+    background-color: red;
+    transform: translateY(-1px);
+}
+
+.log-out-btn:active {
+    transform: scale(0.97);
+}

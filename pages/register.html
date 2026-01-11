@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <form class="form" id="register-form">
+            <header class="form-header">
+                <h3 class="title">Đăng ký tài khoản</h3>
+                <p class="description">Đăng ký tài khoản để sử dụng dịch vụ</p>
+            </header>
+            <main class="form-body">
+                <div class="form-group">
+                    <label class="form-label-group" for="">Họ và tên đệm</label>
+                    <input class="form-input-group" type="text" id="lastName" required>
+                    <span class="error-message" id="lastName-error"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label-group" for="">Tên</label>
+                    <input class="form-input-group" type="text" id="firstName" required>
+                    <span class="error-message" id="firstName-error"></span>
+                </div>
+            </main>
+            <div class="form-out">
+                    <label class="form-label" for="">Email</label>
+                    <input class="form-input" type="text" id="email" placeholder="you@company.com" required>
+                    <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div>
+                <label class="form-label" for="">Mật khẩu</label>
+                <input class="form-input" type="password" id="password" required>
+                <span class="error-message" id="password-error"></span>
+            </div>
+            <div>
+                <label class="form-label" for="">Xác nhận mật khẩu</label>
+                <input class="form-input" type="password" id="confirmPassword" required>
+                <span class="error-message" id="confirmPassword-error"></span>
+            </div>
+            <div class="form-funtion">
+                <div class="accept-box">
+                    <input class="input-checkbox" type="checkbox" id="accept">
+                    <span>Bạn đồng ý với <a href="">chính sách và điều khoản</a></span>
+                    <span class="error-message" id="accept-error"></span>
+                </div>
+            </div>
+            <footer class="form-footer">
+                <button class="form-button" type="submit">Đăng ký</button>
+                <p class="form-redirect">
+                    <span>Bạn đã có tài khoản? <a href="../pages/login.html">Đăng nhập</a></span>
+                </p>
+            </footer>
+        </form>
+    </div>
+    <script src="../JS/register.js"></script>
+    <a href="./login.html"></a>
+</body>
+</html>

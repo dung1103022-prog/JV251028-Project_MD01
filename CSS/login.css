@@ -1,0 +1,127 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form {
+    width: 535px;
+    border: 1px solid none;
+
+}
+.form-header {
+    margin-bottom: 20px;
+}
+.title {
+    color: #090914;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+.description {
+    color: #52525b;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+.form-body p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.form-label {
+    color: #090914;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.form-input {
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    padding: 0 16px;
+}
+.form-funtion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+}
+.input-checkbox {
+    height: 19px;
+    width: 19px;
+}
+.remember-account {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    
+}
+.remember-account span {
+    color: #090914;
+    font-size: 13px;
+    font-weight: 500;
+}
+.forgot-account a {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.form-footer {
+}
+.form-button {
+    height: 55px;
+    width: 100%;
+    background-color: #2563eb;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-bottom: 34px;
+}
+.form-redirect {
+    text-align: center;
+}
+.form-redirect span {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-redirect a {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+@media (max-width: 500px) {
+    .form {
+        width: 90%;
+        height: auto;
+    }
+
+    .form-body {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}

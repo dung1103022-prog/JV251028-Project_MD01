@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/category-manager.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="./image/Fire.png" class="logo">
+            <span class="ecommerce-text">Ecommerce</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="menu-item">
+                        <i class="fa-solid fa-house"></i> Thống kê
+                    </a>
+                </li>
+                <li>
+                    <a href="category-manager.html" class="menu-item active">
+                        <i class="fa-solid fa-table-list"></i> Danh mục
+                    </a>
+                </li>
+                <li>
+                    <a href="product-manager.html" class="menu-item">
+                        <i class="fa-regular fa-file"></i> Sản phẩm
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section class="category-section" id="danh-muc">
+        <div class="title">
+            <i class="fa-regular fa-bell"></i>
+            <img src="./image/Ellipse 6 (1).png" alt="">
+        </div>
+        <div class="header">
+            <h1>Danh mục</h1>
+            <button id="add-category-btn" class="btn-add-category">Thêm mới danh mục</button>
+        </div>
+        
+        <div class="filter-container">
+            <select id="status-filter" class="status-filter">
+                <option value="all">Tất cả</option>
+                <option value="active">Đang hoạt động</option>
+                <option value="inactive">Ngừng hoạt động</option>
+            </select>
+            <div class="search-wrapper">
+                <input type="text" id="search-name" class="search-name" placeholder="Tìm kiếm danh mục theo tên">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        
+        <table class="category-table">
+            <thead>
+                <tr>
+                    <th>Mã danh mục <i class="fa-solid fa-arrow-down"></i></th>
+                    <th>Tên danh mục <i class="fa-solid fa-arrow-down"></i></th>
+                    <th>Trạng thái <i class="fa-solid fa-arrow-down"></i></th>
+                    <th>Chức năng <i class="fa-solid fa-arrow-down"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DM001</td>
+                    <td>Quần áo</td>
+                    <td><span class="status active">Đang hoạt động</span></td>
+                    <td>
+                        <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM002</td>
+                    <td>Kính mắt</td>
+                    <td><span class="status inactive">Ngừng hoạt động</span></td>
+                    <td>
+                        <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination" id="pagination"></div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Thêm mới danh mục</h2>
+            <form id="add-category-form" class="add-category-form">
+                <label for="category-id" class="category-id">Mã danh mục *</label>
+                <input type="text" id="category-id" name="category-id" required>
+                <span id="id-error" class="error-message"></span>
+
+                <label for="category-name" class="category-name">Tên danh mục *</label>
+                <input type="text" id="category-name" name="category-name" required>
+                <span id="name-error" class="error-message"></span>
+
+                <label for="category-status">Trạng thái</label>
+                <input type="radio" id="active" name="status" value="active" checked>
+                <label for="active">Đang hoạt động</label>
+                <input type="radio" id="inactive" name="status" value="inactive">
+                <label for="inactive">Ngừng hoạt động</label>
+
+                <div class="modal-buttons">
+                    <button type="button" id="cancel-btn" class="cancel-btn">Hủy</button>
+                    <button type="submit" class="submit-btn">Thêm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="confirm-delete-modal" class="modal-delete">
+        <div class="modal-delete-content">
+            <div class="modal-delete-icon">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <h3>Xác nhận</h3>
+            <p>Bạn có chắc chắn muốn xóa sản phẩm <strong id="delete-item-name"></strong> khỏi hệ thống không?</p>
+            <div class="modal-delete-buttons">
+                <button id="cancel-delete-btn" class="btn-cancel">Hủy</button>
+                <button id="confirm-delete-btn" class="btn-delete">Xóa</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/category-manager.js"></script>
+</body>
+</html>

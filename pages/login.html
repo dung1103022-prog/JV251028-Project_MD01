@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="form" id="login-form">
+            <header class="form-header">
+                <h3 class="title">Đăng nhập</h3>
+                <p class="description">Đăng nhập tài khoản để sử dụng hệ thống quản lý.</p>
+            </header>
+            <main class="form-body">
+                <div class="form-group">
+                    <label class="form-label" for="">Email</label>
+                    <input class="form-input" type="text" id="email" required>
+                </div>
+
+                <div>
+                    <label class="form-label" for="">Mật khẩu</label>
+                    <input class="form-input" type="password" id="password" required>
+                </div>
+                <p id="login-error"></p>
+
+            </main>
+            <div class="form-funtion">
+                <div class="remember-account">
+                        <input class="input-checkbox" type="checkbox" id="remember">
+                        <span>Nhớ tài khoản</span>
+                </div>
+                <div class="forgot-account">
+                    <a href="">Quên mật khẩu</a>
+                </div>
+            </div>
+            <footer class="form-footer">
+                <button class="form-button">Đăng nhập</button>
+                <p class="form-redirect">
+                    <span>Bạn chưa có tài khoản? <a href="./register.html">Đăng ký</a></span>
+                </p>
+            </footer>
+        </form>
+    </div>
+    <script src="../JS/login.js"></script>
+</body>
+</html>
