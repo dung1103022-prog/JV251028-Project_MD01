@@ -1,0 +1,17 @@
+{
+  "name": "ec-php/app",
+  "require": {
+    "php": ">=8.1",
+    "stripe/stripe-php": "^19.0",
+    "phpmailer/phpmailer": "^7.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
