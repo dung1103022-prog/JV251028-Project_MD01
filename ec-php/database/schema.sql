@@ -268,4 +268,5 @@ INSERT INTO categories (name, sort_order) VALUES
   ('ボトムス', 2),
   ('アウター', 3),
   ('シューズ', 4),
+
   ('アクセサリー', 5);
