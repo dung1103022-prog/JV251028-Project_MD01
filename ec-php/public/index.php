@@ -17,4 +17,5 @@ $request = new \App\Core\Request();
 
 // アプリ起動
 $app = new \App\Core\App();
+
 $app->run($request);
